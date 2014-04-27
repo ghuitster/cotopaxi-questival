@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Cotopaxi</string>
+    <string name="parse_application_id">CHANGED TO PROTECT THE INNOCENT</string>
+    <string name="parse_client_key">CHANGED TO PROTECT THE INNOCENT</string>
+    <string name="action_guide">Guide</string>
+    <string name="action_sign_out">Sign Out</string>
+    <string name="action_contact_us">Contact Us</string>
+    <string name="action_website">Cotopaxi.com</string>
+    <string name="action_phone">844&#8211;268&#8211;6729</string>
+    <string name="action_email">llamas@cotopaxi.com</string>
+    <string name="welcome_team">Welcome Team:</string>
+    <string name="micro_adventure">Micro-Adventure</string>
+    <string name="pledge_for_good">Pledge For Good</string>
+    <string name="challenges">Challenges</string>
+    <string name="challenge">Challenge</string>
+    <string name="go_for_the_good">Go for the good!</string>
+    <string name="hours_left">Hours Left</string>
+    <string name="total_points">Total Points</string>
+    <string name="the_pledge">The Pledge</string>
+    <string name="pledge_intro">Type your Cotopaxi \"for good\" pledge here to make it show up on the big screen behind the band</string>
+    <string name="pledge_prompt">I pledge to&#8230;</string>
+    <string name="pts_default">35pts.</string>
+    <string name="required_hashtags">Required hashtags:</string>
+    <string name="done">Done</string>
+    <string name="challenge_content">Challenge content</string>
+    <string name="points_awarded">Points awarded</string>
+    <string name="join_us">Join us on a Cotopaxi Micro-Adventure</string>
+    <string name="login_intro">Login, or create an account to begin your epic journey.</string>
+    <string name="create_an_account">Create an Account</string>
+    <string name="login">Login</string>
+    <string name="create_account">Create Account</string>
+    <string name="almost_there">Almost there!</string>
+    <string name="just_around_bend">Just around the next bend.</string>
+    <string name="email_address">Email address used to register for the Cotopaxi Questival.</string>
+    <string name="example_email">example@email.com</string>
+    <string name="confirm">Confirm</string>
+    <string name="password">Password</string>
+    <string name="continue_terms_use">By tapping \"Continue\" I agree to the terms of use</string>
+    <string name="passwords_match">Passwords don\'t match</string>
+    <string name="forgot_password">Forgot Password</string>
+    <string name="splash_screen">Splash Screen</string>
+    <string name="cotopaxi_logo">Cotopaxi Logo</string>
+    <string name="dashes">---------------</string>
+    <string name="mamallama">#mamallama</string>
+    <string name="hours_left_counter">0</string>
+    <string name="total_points_counter">0</string>
+    <string name="adventure">Adventure</string>
+    <string name="camping">Camping</string>
+    <string name="community">Community</string>
+    <string name="hikes">Hikes</string>
+    <string name="quirky">Quirky</string>
+    <string name="social_media">Social Media</string>
+    <string name="guide_arrow">Guide Arrow</string>
+    <string name="email">Email</string>
+    <string name="required_hashtag_list">#teamskree  #cotopaxi  #microadventure  #slackline</string>
+    <string name="cotopaxi_url">http://cotopaxi.com/</string>
+    <string name="challenge_completed">Challenge completed!</string>
+    <string name="points_default">35</string>
+    <string name="llama">Llama</string>
+    <string name="speech_bubble">Speech bubble</string>
+    <string name="challenge_complete_message">Done did it!</string>
+    <string name="pledges_made_counter">0</string>
+    <string name="pledges_made">Good pledges</string>
+    <string name="i_pledge">I pledge</string>
+    <string name="guide">Guide</string>
+    <string name="guide_one">1. Choose a challenge.</string>
+    <string name="guide_two">2. Document your feat using photo, video, or text.</string>
+    <string name="guide_three">3. Post your photo, video, or text using the supplied hash tags.</string>
+    <string name="guide_four">4. Mark the challenge complete.</string>
+    <string name="ok_got_it">OK, got it.</string>
+    <string name="temp_password">temp</string>
+    <string name="registration_error_title">Error occurred during registration</string>
+    <string name="registration_error_content">This email has already been registered.</string>
+    <string name="ok">OK</string>
+    <string name="empty_email_message">Please enter your email in the email field.</string>
+    <string name="empty_email_title">Request a new password</string>
+    <string name="request_password_content">Your new password will be sent to</string>
+    <string name="password_reset_confirm">An email with steps to reset your password has been sent.</string>
+    <string name="no_team">You are not registered to any team.</string>
+    <string name="mark_challenge_incomplete_message">Are you sure you want to mark this challenge incomplete?</string>
+    <string name="mark_challenge_incomplete_title">Mark challenge incomplete</string>
+    <string name="cancel">Cancel</string>
+    <string name="yes">Yes</string>
+    <string name="my_pledges">My pledges</string>
+    <string name="continue_str">Continue</string>
+
+    <string-array name="challenge_complete_messages">
+        <item>Booooom!!!</item>
+        <item>Yep Yep!</item>
+        <item>Boomshallama!</item>
+        <item>Pazow!</item>
+        <item>Noice!</item>
+        <item>Blarp!</item>
+        <item>Wooot!</item>
+        <item>Grrrrreat!</item>
+        <item>Chickachow!</item>
+        <item>Good on ya!</item>
+        <item>Llamma Sound!</item>
+        <item>That was sick!</item>
+        <item>Killed it!</item>
+        <item>Skillz!</item>
+        <item>Perfecto!</item>
+        <item>Count it!</item>
+        <item>Wah Jeah!</item>
+        <item>So hot!</item>
+        <item>Go go go!</item>
+    </string-array>
+    <string-array name="challenge_categories">
+        <item>Adventure</item>
+        <item>Camping</item>
+        <item>Community</item>
+        <item>Hikes</item>
+        <item>Quirky</item>
+        <item>Service</item>
+        <item>Social Media</item>
+        <item>Survival</item>
+    </string-array>
+
+</resources>

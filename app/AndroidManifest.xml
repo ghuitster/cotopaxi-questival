@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.cotopaxi.Cotopaxi"
+    android:versionCode="7"
+    android:versionName="1.06" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
+
+    <permission
+        android:name="com.cotopaxi.Cotopaxi.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="com.cotopaxi.Cotopaxi.permission.C2D_MESSAGE" />
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+
+    <application
+        android:name="com.cotopaxi.Cotopaxi.App"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.cotopaxi.Cotopaxi.Splash"
+            android:label="@string/app_name"
+            android:screenOrientation="sensorPortrait"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.cotopaxi.Cotopaxi.WelcomeActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.cotopaxi.Cotopaxi.ChallengeCategoryListActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.cotopaxi.Cotopaxi.CreateAccountActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.cotopaxi.Cotopaxi.HomeActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.cotopaxi.Cotopaxi.SpecificChallengeListActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.cotopaxi.Cotopaxi.LoginActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.cotopaxi.Cotopaxi.ChallengeActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.cotopaxi.Cotopaxi.ChallengeCompletedActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.cotopaxi.Cotopaxi.PledgeintroActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.cotopaxi.Cotopaxi.ComposePledgeActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.cotopaxi.Cotopaxi.GuideActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.cotopaxi.Cotopaxi.ActivityWithFooter"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.cotopaxi.Cotopaxi.BaseActivity"
+            android:screenOrientation="sensorPortrait" />
+        <activity
+            android:name="com.cotopaxi.Cotopaxi.MyPledgesActivity"
+            android:screenOrientation="sensorPortrait" />
+
+        <service android:name="com.parse.PushService" />
+
+        <receiver android:name="com.parse.ParseBroadcastReceiver" >
+            <intent-filter>
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <receiver
+            android:name="com.parse.GcmBroadcastReceiver"
+            android:permission="com.google.android.c2dm.permission.SEND" >
+            <intent-filter>
+                <action android:name="com.google.android.c2dm.intent.RECEIVE" />
+                <action android:name="com.google.android.c2dm.intent.REGISTRATION" />
+
+                <category android:name="com.cotopaxi.Cotopaxi" />
+            </intent-filter>
+        </receiver>
+    </application>
+
+</manifest>

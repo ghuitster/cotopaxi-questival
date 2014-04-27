@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="light_orange">#FF4612</color>
+    <color name="dark_orange">#B22D1B</color>
+    <color name="really_light_gray">#9E9E9E</color>
+    <color name="light_gray">#F7EFE8</color>
+    <color name="dark_gray">#605351</color>
+    <color name="really_dark_gray">#544744</color>
+
+</resources>

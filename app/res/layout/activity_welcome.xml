@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_orange" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <include
+            android:id="@+id/horizontal_line"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/cotopaxi_logo_image"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="37dp"
+            layout="@layout/horizontal_thin_dark_orange_line" />
+
+        <TextView
+            android:id="@+id/join_us"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/horizontal_line"
+            android:layout_alignRight="@+id/cotopaxi_logo_image"
+            android:layout_below="@+id/horizontal_line"
+            android:layout_marginTop="25dp"
+            android:text="@string/join_us"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/light_gray"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/login_intro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/join_us"
+            android:layout_alignRight="@+id/join_us"
+            android:layout_below="@+id/join_us"
+            android:layout_marginTop="19dp"
+            android:text="@string/login_intro"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/light_gray" />
+
+        <Button
+            android:id="@+id/create_account_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/login_intro"
+            android:layout_alignRight="@+id/horizontal_line"
+            android:layout_below="@+id/login_intro"
+            android:layout_marginTop="10dp"
+            android:background="@layout/light_orange_round_button_with_border"
+            android:onClick="createAccountPressed"
+            android:text="@string/create_an_account"
+            android:textColor="@color/light_gray"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/login_intro"
+            android:layout_alignRight="@+id/horizontal_line"
+            android:layout_below="@+id/create_account_button"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="10dp"
+            android:background="@layout/light_gray_round_button"
+            android:onClick="loginPressed"
+            android:text="@string/login"
+            android:textColor="@color/light_orange"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/cotopaxi_logo_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="25dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/cotopaxi_logo"
+            android:maxWidth="130dp"
+            android:src="@drawable/cotopaxi_logo" />
+    </RelativeLayout>
+
+</ScrollView>

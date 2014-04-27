@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_orange" >
+
+    <ImageView
+        android:id="@+id/pledge_icon_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/the_pledge"
+        android:maxHeight="40dp"
+        android:src="@drawable/pledge_icon" />
+
+    <RelativeLayout
+        android:id="@+id/footer_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:background="@color/really_dark_gray" >
+
+        <TextView
+            android:id="@+id/go_for_the_good"
+            android:layout_width="95dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="8dp"
+            android:clickable="true"
+            android:onClick="goForTheGoodPressed"
+            android:text="@string/go_for_the_good"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/light_orange"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pledges_made_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/go_for_the_good"
+            android:layout_marginRight="20dp"
+            android:text="@string/pledges_made_counter"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/light_orange"
+            android:textSize="35sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/pledges_made"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/pledges_made_counter"
+            android:layout_below="@+id/pledges_made_counter"
+            android:text="@string/pledges_made"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/light_gray"
+            android:textSize="12sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/pledge_intro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pledge_icon_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:maxWidth="310dp"
+        android:text="@string/pledge_intro"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/light_gray"
+        android:textSize="26sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/pledge_intro"
+        android:layout_marginTop="30dp"
+        android:background="@color/light_gray"
+        android:clickable="true"
+        android:onClick="pledgePressed"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/pledge_prompt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:layout_marginLeft="37dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/pledge_prompt"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/really_dark_gray" />
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/my_pledges_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer_layout"
+        android:layout_alignLeft="@+id/pledge_intro"
+        android:layout_alignRight="@+id/pledge_intro"
+        android:layout_marginBottom="20dp"
+        android:background="@layout/light_gray_round_button"
+        android:onClick="myPledgesPressed"
+        android:text="@string/my_pledges"
+        android:textColor="@color/light_orange"
+        android:textStyle="bold" />
+
+</RelativeLayout>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_orange" >
+
+    <TextView
+        android:id="@+id/challenge_completed"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="30dp"
+        android:maxWidth="200dp"
+        android:text="@string/challenge_completed"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/light_gray"
+        android:textSize="30sp"
+        android:textStyle="bold" />
+
+    <include
+        android:id="@+id/horizontal_line1"
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/challenge_completed"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        layout="@layout/horizontal_thin_dark_orange_line" />
+
+    <TextView
+        android:id="@+id/number_points_awarded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/challenge_completed"
+        android:layout_alignTop="@+id/horizontal_line1"
+        android:lineSpacingMultiplier="0.85"
+        android:text="@string/points_default"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/really_dark_gray"
+        android:textSize="100sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/points_awarded"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/number_points_awarded"
+        android:layout_below="@+id/number_points_awarded"
+        android:text="@string/points_awarded"
+        android:textAllCaps="true"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/really_dark_gray"
+        android:textStyle="bold" />
+
+    <include
+        android:id="@+id/horizontal_line2"
+        android:layout_width="320dp"
+        android:layout_height="1dp"
+        android:layout_below="@+id/points_awarded"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        layout="@layout/horizontal_thin_dark_orange_line" />
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer_layout" />
+
+    <ImageView
+        android:id="@+id/llama_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_alignRight="@+id/horizontal_line2"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/llama"
+        android:maxWidth="35dp"
+        android:src="@drawable/llama" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llama_image"
+        android:layout_alignRight="@+id/llama_image"
+        android:layout_marginRight="20dp" >
+
+        <ImageView
+            android:id="@+id/speech_bubble_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/speech_bubble"
+            android:maxHeight="90dp"
+            android:src="@drawable/speachbubble" />
+
+        <TextView
+            android:id="@+id/challenge_complete_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="@string/challenge_complete_message"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/light_orange"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</RelativeLayout>

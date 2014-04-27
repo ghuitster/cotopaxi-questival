@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_orange" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <TextView
+            android:id="@+id/team_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/welcome_team"
+            android:layout_centerHorizontal="true"
+            android:text="@string/mamallama"
+            android:textAllCaps="true"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:textColor="@color/light_gray"
+            android:textSize="40sp"
+            android:textStyle="bold" />
+
+        <include
+            android:id="@+id/horizontal_line"
+            android:layout_width="300dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/team_name"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            layout="@layout/horizontal_thin_dark_orange_line" />
+
+        <TextView
+            android:id="@+id/welcome_team"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/team_name"
+            android:layout_below="@+id/cotopaxi_home_logo_image"
+            android:layout_marginTop="25dp"
+            android:text="@string/welcome_team"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/light_gray" />
+
+        <ImageView
+            android:id="@+id/cotopaxi_home_logo_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/cotopaxi_logo"
+            android:maxWidth="190dp"
+            android:src="@drawable/cotopaxi_logo" />
+
+        <RelativeLayout
+            android:id="@+id/micro_adventure_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/horizontal_line"
+            android:layout_below="@+id/horizontal_line"
+            android:layout_marginTop="20dp"
+            android:background="@color/light_orange" >
+
+            <ImageView
+                android:id="@+id/micro_adventure_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/micro_adventure"
+                android:maxWidth="300dp"
+                android:onClick="microAdventurePressed"
+                android:src="@drawable/micro_adventure_button" />
+
+            <TextView
+                android:id="@+id/micro_adventure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:clickable="true"
+                android:onClick="microAdventurePressed"
+                android:text="@string/micro_adventure"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/light_orange"
+                android:textStyle="bold" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/pledge_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/micro_adventure_layout"
+            android:layout_below="@+id/micro_adventure_layout"
+            android:layout_marginTop="30dp"
+            android:background="@color/light_orange" >
+
+            <ImageView
+                android:id="@+id/pledge_for_good_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/pledge_for_good"
+                android:maxWidth="300dp"
+                android:onClick="pledgeForGoodPressed"
+                android:src="@drawable/pledge_button" />
+
+            <TextView
+                android:id="@+id/pledge_for_good"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="60dp"
+                android:clickable="true"
+                android:onClick="pledgeForGoodPressed"
+                android:text="@string/pledge_for_good"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:textColor="@color/light_orange"
+                android:textStyle="bold" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</ScrollView>

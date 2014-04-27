@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_orange" >
+
+    <ImageView
+        android:id="@+id/challenge_category_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/adventure"
+        android:maxWidth="60dp" />
+
+    <ListView
+        android:id="@+id/specific_challenge_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/challenge_category_image"
+        android:layout_marginTop="30dp" />
+
+    <include
+        android:id="@+id/horizontal_line"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/challenge_category_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        layout="@layout/horizontal_thin_dark_orange_line" />
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer_layout" />
+
+</RelativeLayout>

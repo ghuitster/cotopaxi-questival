@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/really_dark_gray" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/adventure_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/guide_one"
+            android:layout_below="@+id/guide_one"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/adventure"
+            android:maxWidth="40dp"
+            android:src="@drawable/adventure_sml" />
+
+        <ImageView
+            android:id="@+id/camping_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/adventure_image"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/adventure_image"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/camping"
+            android:maxWidth="40dp"
+            android:src="@drawable/camp_sml" />
+
+        <ImageView
+            android:id="@+id/community_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/camping_image"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/camping_image"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/community"
+            android:maxWidth="40dp"
+            android:src="@drawable/community_sml" />
+
+        <ImageView
+            android:id="@+id/hikes_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/community_image"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/community_image"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/hikes"
+            android:maxWidth="40dp"
+            android:src="@drawable/hikes_sml" />
+
+        <ImageView
+            android:id="@+id/quirky_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/hikes_image"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/hikes_image"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/quirky"
+            android:maxWidth="40dp"
+            android:src="@drawable/quirky_sml" />
+
+        <TextView
+            android:id="@+id/guide_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/guide_one"
+            android:layout_alignRight="@+id/quirky_image"
+            android:layout_below="@+id/adventure_image"
+            android:layout_marginTop="25dp"
+            android:text="@string/guide_two"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/light_gray" />
+
+        <ImageView
+            android:id="@+id/guide_two_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/adventure_image"
+            android:layout_below="@+id/guide_two"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/guide_two"
+            android:maxHeight="40dp"
+            android:src="@drawable/guide_2" />
+
+        <TextView
+            android:id="@+id/guide_three"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/guide_two"
+            android:layout_alignRight="@+id/guide_two"
+            android:layout_below="@+id/guide_two_image"
+            android:layout_marginTop="25dp"
+            android:text="@string/guide_three"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/light_gray" />
+
+        <ImageView
+            android:id="@+id/facebook_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/adventure_image"
+            android:layout_below="@+id/guide_three"
+            android:layout_marginTop="10dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/social_media"
+            android:maxHeight="40dp"
+            android:src="@drawable/facebook_orange" />
+
+        <ImageView
+            android:id="@+id/vine_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/facebook_image"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/instagram_image"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/social_media"
+            android:maxHeight="40dp"
+            android:src="@drawable/vine_orange" />
+
+        <ImageView
+            android:id="@+id/instagram_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/facebook_image"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/twitter_image"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/social_media"
+            android:maxHeight="40dp"
+            android:src="@drawable/instagram_orange" />
+
+        <ImageView
+            android:id="@+id/twitter_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/facebook_image"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/facebook_image"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/social_media"
+            android:maxHeight="40dp"
+            android:src="@drawable/twitter_orange" />
+
+        <TextView
+            android:id="@+id/guide_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/guide_one"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/light_gray" />
+
+        <TextView
+            android:id="@+id/guide_four"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/guide_three"
+            android:layout_below="@+id/facebook_image"
+            android:layout_marginTop="25dp"
+            android:text="@string/guide_four"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textColor="@color/light_gray" />
+
+        <ImageView
+            android:id="@+id/guide_four_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/facebook_image"
+            android:layout_below="@+id/guide_four"
+            android:layout_marginTop="11dp"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/done"
+            android:maxHeight="40dp"
+            android:src="@drawable/guide_4" />
+
+        <Button
+            android:id="@+id/ok_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:background="@layout/really_dark_gray_round_button_with_border"
+            android:onClick="gotItPressed"
+            android:text="@string/ok_got_it"
+            android:textColor="@color/light_orange"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</ScrollView>

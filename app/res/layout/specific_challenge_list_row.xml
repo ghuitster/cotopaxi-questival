@@ -1,0 +1,42 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/challenge_list_row_selector" >
+
+    <TextView
+        android:id="@+id/points"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="10dp"
+        android:background="@layout/point_background"
+        android:gravity="center"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/light_gray" />
+
+    <ImageView
+        android:id="@+id/guide_arrow_image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/guide_arrow"
+        android:maxHeight="15dp"
+        android:src="@drawable/guide_arrow" />
+
+    <TextView
+        android:id="@+id/specific_challenge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/guide_arrow_image"
+        android:layout_toRightOf="@+id/points"
+        android:gravity="center_vertical"
+        android:padding="10dp"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/light_gray" />
+
+</RelativeLayout>

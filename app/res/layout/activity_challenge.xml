@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_orange" >
+
+    <TextView
+        android:id="@+id/challenge_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginTop="20dp"
+        android:maxWidth="275dp"
+        android:text="@string/challenge_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/light_gray" />
+
+    <include
+        android:id="@+id/footer"
+        layout="@layout/footer_layout" />
+
+    <TextView
+        android:id="@+id/challenge_points"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/challenge_content"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/pts_default"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/light_gray"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/footer"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/challenge_points"
+        android:background="@color/dark_gray" >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" >
+
+            <TextView
+                android:id="@+id/required_hashtags"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/facebook_image"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="@string/required_hashtags"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/light_orange" />
+
+            <TextView
+                android:id="@+id/required_hashtag_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/required_hashtags"
+                android:layout_centerHorizontal="true"
+                android:text="@string/required_hashtag_list"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:textColor="@color/light_gray" />
+
+            <include
+                android:id="@+id/horizontal_line"
+                android:layout_width="320dp"
+                android:layout_height="1dp"
+                android:layout_below="@+id/required_hashtag_list"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                layout="@layout/horizontal_thin_dark_orange_line" />
+
+            <ImageView
+                android:id="@+id/done_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/horizontal_line"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="20dp"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/done"
+                android:maxWidth="60dp"
+                android:onClick="donePressed"
+                android:src="@drawable/guide_4" />
+
+            <ImageView
+                android:id="@+id/instagram_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignRight="@+id/required_hashtags"
+                android:layout_alignTop="@+id/facebook_image"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/social_media"
+                android:maxHeight="50dp"
+                android:onClick="instagramPressed"
+                android:src="@drawable/instagram_orange" />
+
+            <ImageView
+                android:id="@+id/twitter_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/required_hashtags"
+                android:layout_alignTop="@+id/facebook_image"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/social_media"
+                android:maxHeight="50dp"
+                android:onClick="twitterPressed"
+                android:src="@drawable/twitter_orange" />
+
+            <ImageView
+                android:id="@+id/facebook_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="15dp"
+                android:layout_toLeftOf="@+id/twitter_image"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/social_media"
+                android:maxHeight="50dp"
+                android:onClick="facebookPressed"
+                android:src="@drawable/facebook_orange" />
+
+            <ImageView
+                android:id="@+id/vine_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/instagram_image"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/instagram_image"
+                android:adjustViewBounds="true"
+                android:contentDescription="@string/social_media"
+                android:maxHeight="50dp"
+                android:onClick="vinePressed"
+                android:src="@drawable/vine_orange" />
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

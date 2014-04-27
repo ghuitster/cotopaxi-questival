@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_gray" >
+
+    <EditText
+        android:id="@+id/pledge_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:hint="@string/pledge_prompt"
+        android:inputType="textMultiLine"
+        android:textColor="@color/really_dark_gray" />
+
+    <TextView
+        android:id="@+id/required_hashtag_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pledge_entry"
+        android:layout_below="@+id/pledge_entry"
+        android:text="@string/required_hashtag_list"
+        android:textAppearance="?android:attr/textAppearanceSmall"
+        android:textColor="@color/really_dark_gray" />
+
+    <Button
+        android:id="@+id/accept_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/pledge_entry"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/pledge_entry"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="15dp"
+        android:background="@layout/light_orange_round_button_with_border"
+        android:onClick="pledgePressed"
+        android:text="@string/i_pledge"
+        android:textColor="@color/light_gray"
+        android:textStyle="bold" />
+
+</RelativeLayout>
